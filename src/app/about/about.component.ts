@@ -1,12 +1,22 @@
-import { Component, OnInit, ChangeDetectorRef } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-about",
-  templateUrl: "./about.component.html",
-  styleUrls: ["./about.component.css"]
+  selector: 'about-home',
+  template: `
+  <transition-component>about</transition-component>
+<nav>
+	<a routerLink="/about">About</a>
+  <br>
+	<a routerLink="/home">Home</a>
+</nav>
+  `
+
 })
 export class AboutComponent implements OnInit {
-  constructor(private cdr: ChangeDetectorRef) {}
 
-  ngOnInit() {}
+  constructor() { }
+
+  ngOnInit() {
+  }
+
 }

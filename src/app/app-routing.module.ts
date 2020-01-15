@@ -8,12 +8,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    data: { breadcrumb: '首页' },
   },
   {
     path: 'about',
     component: AboutComponent,
-    data: { breadcrumb: '关于' },
   },
   {
     path: '**',

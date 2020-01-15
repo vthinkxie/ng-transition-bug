@@ -13,22 +13,12 @@ import {
 export class AttachComponent {}
 
 @Component({
-  selector: "transition-component",
-  template: "<ng-content></ng-content>",
-  host: {
-    "[class.transition]": "true"
-  }
-})
-export class TransitionComponent {
-  constructor() {}
-}
-
-@Component({
   selector: "my-app",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
+  name = "Angular";
   constructor(
     private injector: Injector,
     private viewContainerRef: ViewContainerRef,
@@ -42,4 +32,15 @@ export class AppComponent {
     // transition will not be triggered if comment this line
     this.applicationRef.attachView(view.hostView);
   }
+}
+
+@Component({
+  selector: "transition-component",
+  template: "<ng-content></ng-content>",
+  host: {
+    "[class.transition]": "true"
+  }
+})
+export class TransitionComponent {
+  constructor() {}
 }

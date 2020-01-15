@@ -1,0 +1,43 @@
+{
+  "name": "@platform-browser",
+  "version": "0.0.0-PLACEHOLDER",
+  "description": "Angular - library for using Angular in a web browser",
+  "main": "./bundles/platform-browser.umd.js",
+  "module": "./fesm5/platform-browser.js",
+  "es2015": "./fesm2015/platform-browser.js",
+  "esm5": "./esm5/platform-browser.js",
+  "esm2015": "./esm2015/platform-browser.js",
+  "fesm5": "./fesm5/platform-browser.js",
+  "fesm2015": "./fesm2015/platform-browser.js",
+  "typings": "./platform-browser.d.ts",
+  "author": "angular",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": "0.0.0-PLACEHOLDER",
+    "@angular/common": "0.0.0-PLACEHOLDER",
+    "tslib": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular/angular.git"
+  },
+  "ng-update": {
+    "packageGroup": "NG_UPDATE_PACKAGE_GROUP"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://wombat-dressing-room.appspot.com"
+  },
+  "__processed_by_ivy_ngcc__": {
+    "fesm2015": "9.0.0-rc.8",
+    "fesm5": "9.0.0-rc.8",
+    "es2015": "9.0.0-rc.8",
+    "esm2015": "9.0.0-rc.8",
+    "esm5": "9.0.0-rc.8",
+    "main": "9.0.0-rc.8",
+    "module": "9.0.0-rc.8"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
+  }
+}
