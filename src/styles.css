@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+/* Add application styles & imports to this file! */
+.transition{
+  transition: all ease 3s;
+  border: 10px solid blue;
+  width: 100px;
+  height: 100px;
+  display: block;
+}
